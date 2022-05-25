@@ -1,0 +1,248 @@
+$font-family:'Space Mono', monospace;
+
+$Verydarkcyan:hsl(183, 100%, 15%);
+$Darkgrayishcyan: hsl(186, 14%, 43%);
+$Grayishcyan: hsl(184, 14%, 56%);
+$Lightgrayishcyan: hsl(185, 41%, 84%);
+$Verylightgrayishcyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+$Strongcyan: hsl(172, 67%, 45%);
+
+body {background-color: $Lightgrayishcyan; font-family: $font-family;}
+.wrapper {
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    .logo {
+        text-align: center;
+        display: block;
+    }
+}
+
+.container {
+    width: 100%;
+    background-color: $White;
+    border-radius: 20px;
+    display: flex;
+    padding: 35px 80px 35px 40px;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 80px;
+    position: relative;
+    left: -50px;
+}
+
+.c-flex {
+    flex: 50%;
+}
+
+.bar-count {
+    background-color: $Verydarkcyan;
+    width: 100%;
+    border-radius: 20px;
+    padding: 35px 25px;
+}
+
+.flex-count {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p-white {
+    color: white;
+    font-size: 14px;
+}
+
+.p-grey{
+    color: $Grayishcyan;
+    font-size: 12px;
+    position: relative;
+    top: -12px;
+}
+
+.number-count {
+    color: $Strongcyan;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.reset-count {
+    background-color: $Strongcyan;
+    width: 100%;
+    margin-top: 140px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    align-items: center;
+    color: $Verydarkcyan;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.reset-count:hover {
+    background-color: $Darkgrayishcyan;
+    color: $Strongcyan;
+}
+
+.bar-bayar {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#total-bill{
+    background-image: url('./images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+        background-color: $Verylightgrayishcyan;
+        color: $Verydarkcyan;
+        height: 50px;
+        font-size: 25px;
+        margin-right: 20px;
+        text-align: right;
+        width: 100%;
+        border: 0;
+        border-radius: 10px;
+        font-family: $font-family;
+    }
+#total-bill:focus {
+    outline: 1px solid $Strongcyan;
+}
+
+.number-of {
+    margin-top: 50px;
+}
+
+#total-people {
+    background-image: url('./images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+        background-color: $Verylightgrayishcyan;
+        color: $Verydarkcyan;
+        height: 50px;
+        font-size: 25px;
+        margin-right: 20px;
+        text-align: right;
+        width: 100%;
+        border: 0;
+        font-family: $font-family;
+        border-radius: 10px;
+}
+#total-people:focus {
+    outline: 1px solid $Strongcyan;
+}
+
+
+
+.bill {
+    color: $Darkgrayishcyan;
+}
+
+.tip-bayar {
+    color: $Verydarkcyan;
+    margin-top: 40px;
+}
+
+.select-bayar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: center;
+    div, input {
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 25px;
+        flex: 20%;
+    }
+    
+    input {
+        width: 20%;
+        font-size: 25px;
+        font-family: $font-family;
+        background-color: $Verylightgrayishcyan;
+    color: $Verydarkcyan;
+    border: 0;
+    }
+    div {transition: 0.5s; cursor: pointer;}
+    div:hover {
+        background-color: $Strongcyan;
+    }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.four-bayar {
+    background-color: $Verydarkcyan;
+    color: $White;
+}
+
+.n-bayar {
+    color: $Verydarkcyan;
+}
+
+#number-eror {
+    font-size: 12px;
+   float: right;
+    color: red;
+    display: none;
+}
+@media screen and (max-width: 940px) {
+    .container {
+        width: 80%;
+        margin: 50px auto 0 auto;
+        left: 0;
+    }
+}
+@media screen and (max-width: 627px) {
+    .select-bayar {
+        div {
+            flex: 16%;
+            font-size: 20px;
+        }
+        input {
+            width: 16%;
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width: 594px) {
+    .number-of {
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .wrapper {
+        width: 100%;
+        margin: 25px auto 0 auto;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        padding: 25px;
+        left: 0;
+    }
+
+    .bar-count {
+        width: 90%;
+        padding: 25px;
+    }    
+
+    .number-of {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .bar-count {
+        width: 90%;
+        padding: 20px;
+    }   
+}

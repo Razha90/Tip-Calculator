@@ -1,0 +1,248 @@
+body {
+  background-color: hsl(185deg, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 20px auto 0 auto;
+}
+.wrapper .logo {
+  text-align: center;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 20px;
+  display: flex;
+  padding: 35px 80px 35px 40px;
+  flex-direction: row;
+  gap: 35px;
+  margin-top: 80px;
+  position: relative;
+  left: -50px;
+}
+
+.c-flex {
+  flex: 50%;
+}
+
+.bar-count {
+  background-color: hsl(183deg, 100%, 15%);
+  width: 100%;
+  border-radius: 20px;
+  padding: 35px 25px;
+}
+
+.flex-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.p-white {
+  color: white;
+  font-size: 14px;
+}
+
+.p-grey {
+  color: hsl(184deg, 14%, 56%);
+  font-size: 12px;
+  position: relative;
+  top: -12px;
+}
+
+.number-count {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.reset-count {
+  background-color: hsl(172deg, 67%, 45%);
+  width: 100%;
+  margin-top: 140px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  align-items: center;
+  color: hsl(183deg, 100%, 15%);
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.reset-count:hover {
+  background-color: hsl(186deg, 14%, 43%);
+  color: hsl(172deg, 67%, 45%);
+}
+
+.bar-bayar {
+  width: 100%;
+  padding-top: 20px;
+}
+
+#total-bill {
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(183deg, 100%, 15%);
+  height: 50px;
+  font-size: 25px;
+  margin-right: 20px;
+  text-align: right;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  font-family: "Space Mono", monospace;
+}
+
+#total-bill:focus {
+  outline: 1px solid hsl(172deg, 67%, 45%);
+}
+
+.number-of {
+  margin-top: 50px;
+}
+
+#total-people {
+  background-image: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(183deg, 100%, 15%);
+  height: 50px;
+  font-size: 25px;
+  margin-right: 20px;
+  text-align: right;
+  width: 100%;
+  border: 0;
+  font-family: "Space Mono", monospace;
+  border-radius: 10px;
+}
+
+#total-people:focus {
+  outline: 1px solid hsl(172deg, 67%, 45%);
+}
+
+.bill {
+  color: hsl(186deg, 14%, 43%);
+}
+
+.tip-bayar {
+  color: hsl(183deg, 100%, 15%);
+  margin-top: 40px;
+}
+
+.select-bayar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  text-align: center;
+}
+.select-bayar div, .select-bayar input {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 25px;
+  flex: 20%;
+}
+.select-bayar input {
+  width: 20%;
+  font-size: 25px;
+  font-family: "Space Mono", monospace;
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(183deg, 100%, 15%);
+  border: 0;
+}
+.select-bayar div {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.select-bayar div:hover {
+  background-color: hsl(172deg, 67%, 45%);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.four-bayar {
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.n-bayar {
+  color: hsl(183deg, 100%, 15%);
+}
+
+#number-eror {
+  font-size: 12px;
+  float: right;
+  color: red;
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .container {
+    width: 80%;
+    margin: 50px auto 0 auto;
+    left: 0;
+  }
+}
+@media screen and (max-width: 627px) {
+  .select-bayar div {
+    flex: 16%;
+    font-size: 20px;
+  }
+  .select-bayar input {
+    width: 16%;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 594px) {
+  .number-of {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .wrapper {
+    width: 100%;
+    margin: 25px auto 0 auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 25px;
+    left: 0;
+  }
+
+  .bar-count {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .number-of {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .bar-count {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <a href="#" class="logo"><img src="./images/logo.svg" alt="Logo"></a>
+        <div class="container">
+            <div class="c-flex">
+                <div class="bar-bayar">
+                    <div class="bill">Bill</div>
+                    <div class="count-bayar">
+                        <input type="number" id="total-bill" placeholder="0">
+                    </div>
+                    <div class="tip-bayar">Select Tip %</div>
+                    <div class="select-bayar">
+                        <div class="four-bayar">5%</div>
+                        <div class="four-bayar" >10%</div>
+                        <div class="four-bayar">15%</div>
+                        <div class="four-bayar">25%</div>
+                        <div class="four-bayar">50%</div>
+                        <input type="number" placeholder="CUSTOM" id="custom">
+                    </div>
+                </div>
+                <div class="number-of"><span class="n-bayar">Number  of People</span> <span id="number-eror">Number can't zero</span></div>
+                <input type="number" id="total-people" placeholder="0">
+            </div>
+            <div class="c-flex">
+                <div class="bar-count">
+                    <div class="flex-count">
+                        <div>
+                            <p class="p-white">Tip Amount</p>
+                            <p class="p-grey">/ person</p>
+                        </div>
+                        <div class="number-count">$<span id="jumlah-tip">0.00</span></div>
+                    </div>
+                    <div class="flex-count">
+                        <div>
+                            <p class="p-white">Total</p>
+                            <p class="p-grey">/ person</p>
+                        </div>
+                        <div class="number-count">$<span id="total-tip">0.00</span></div>
+                    </div>
+                    <div class="reset-count">
+                        RESET
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
